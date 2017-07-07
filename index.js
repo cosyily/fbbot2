@@ -20,12 +20,9 @@ app.listen(app.get('port'), function () {
 app.use(bodyParser.json())
 
 
-var moment = require('moment')
-var curDate = moment().format('YYYY-MM-DD');
-
 // index page
 app.get('/', function (req, res) {
-  res.send(curDate)
+  res.send('hello world i am a chat bot')
 })
 
 // for facebook to verify
