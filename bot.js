@@ -3,7 +3,7 @@
 var Config = require('./config')
 var wit = require('./services/wit').getWit()
 
-import moment from 'moment';
+var moment = require('moment')
 var curDate = moment();
 
 
