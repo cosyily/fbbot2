@@ -3,8 +3,7 @@
 var Config = require('./config')
 var wit = require('./services/wit').getWit()
 
-var moment = require('moment')
-var curDate = moment();
+
 
 
 // LETS SAVE USER SESSIONS
@@ -38,7 +37,7 @@ var findOrCreateSession = function (fbid) {
 var read = function (sender, message, reply) {
 	if (message === 'hello') {
 		// Let's reply back hello
-		message = 'Hello yourself! I am a chat bot. You can say "show me pics of corgis"'+ curDate;
+		message = 'Hello yourself! I am a chat bot. You can say "show me pics of corgis"';
 		reply(sender, message)
 	} else {
 		// Let's find the user
