@@ -1,0 +1,752 @@
+Last login: Sat Jul  1 16:08:27 on ttys000
+Christines-MacBook-Pro:~ cosy$ curl \
+>  -H 'Authorization: Bearer O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ' \
+>  'https://api.wit.ai/message?v=01/07/2017&q='
+{"error":"Message is either too short or too long (max is 256)","code":"msg-invalid"}Christines-MacBook-Pro:~ cosy$ curl -H 'Authorization: Bearer O6EMJCQZX27KMUKHKX5O6KNLEEJ' 'https://api.wit.ai/message?v=20160526&q=when%20is%20dota2%20'
+{"msg_id":"0SvfJmaz6stGsOxQW","_text":"when is dota2","entities":{"wit_game":[{"confidence":0.7424598532192,"value":"dota
+You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone by excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/'
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/'
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/' not found
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/' not found
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/' not found
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/{forked}/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+fatal: unable to access 'https://github.com/{forked}/messenger-bot-witai-tutorial.git/': The requested URL returned error: 400
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/messenger-bot-witai-tutorial.git
+Cloning into 'messenger-bot-witai-tutorial'...
+Username for 'https://github.com': cosyily
+Password for 'https://cosyily@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cosyily/messenger-bot-witai-tutorial.git/' not found
+Christines-MacBook-Pro:~ cosy$ git clone https://github.com/cosyily/Wit-Facebook.git
+Cloning into 'Wit-Facebook'...
+remote: Counting objects: 192, done.
+remote: Total 192 (delta 0), reused 0 (delta 0), pack-reused 192
+Receiving objects: 100% (192/192), 34.10 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (113/113), done.
+Christines-MacBook-Pro:~ cosy$ cd /Users/cosy/Desktop/messenger-bot-witai-tutorial-master
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku app: create
+ ▸    app: is not a heroku command.
+ ▸    Perhaps you meant apps?
+ ▸    Run heroku _ to run heroku apps create.
+ ▸    Run heroku help for a list of available commands.
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku 
+ ▸    Add apps to this dashboard by favoriting them with heroku
+ ▸    apps:favorites:add
+See all add-ons with heroku addons
+See all apps with heroku apps --all
+
+See other CLI commands with heroku help
+
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku apps create
+ ▸    Error: Unexpected argument create
+ ▸    Usage: heroku apps
+ ▸    You gave this command too many arguments. Try the command again without these extra arguments.
+ ▸    
+ ▸    See more information with heroku apps --help
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku apps : create
+ ▸    Error: Unexpected arguments : create
+ ▸    Usage: heroku apps
+ ▸    You gave this command too many arguments. Try the command again without these extra arguments.
+ ▸    
+ ▸    See more information with heroku apps --help
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku create
+Creating app... !
+ ▸    You've reached the limit of 5 apps for unverified accounts. Delete some
+ ▸    apps or add a credit card to verify your account.
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku create
+Creating app... done, ⬢ lower-celsius-68665
+https://lower-celsius-68665.herokuapp.com/ | https://git.heroku.com/lower-celsius-68665.git
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git push heroku master
+fatal: Not a git repository (or any of the parent directories): .git
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ cd /Users/cosy/Desktop
+Christines-MacBook-Pro:Desktop cosy$ git push heroku master
+fatal: Not a git repository (or any of the parent directories): .git
+Christines-MacBook-Pro:Desktop cosy$ cd /Users/cosy/Desktop/messenger-bot-witai-tutorial-master
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git init
+Initialized empty Git repository in /Users/cosy/Desktop/messenger-bot-witai-tutorial-master/.git/
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git add .
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git commit --message "hellow world"
+[master (root-commit) 0880d7b] hellow world
+ Committer: Christine ong <cosy@Christines-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 25 files changed, 661 insertions(+)
+ create mode 100755 .gitignore
+ create mode 100755 LICENSE
+ create mode 100755 Procfile
+ create mode 100755 README.md
+ create mode 100755 bot.js
+ create mode 100755 config.js
+ create mode 100755 connectors/facebook.js
+ create mode 100755 demo/Demo.gif
+ create mode 100755 demo/Demo1.jpg
+ create mode 100755 demo/Demo10.jpg
+ create mode 100755 demo/Demo11.gif
+ create mode 100755 demo/Demo12.jpg
+ create mode 100755 demo/Demo13.jpg
+ create mode 100755 demo/Demo14.jpg
+ create mode 100755 demo/Demo2.jpg
+ create mode 100755 demo/Demo3.jpg
+ create mode 100755 demo/Demo4.jpg
+ create mode 100755 demo/Demo5.jpg
+ create mode 100755 demo/Demo6.jpg
+ create mode 100755 demo/Demo7.jpg
+ create mode 100755 demo/Demo8.gif
+ create mode 100755 demo/Demo9.jpg
+ create mode 100755 index.js
+ create mode 100755 package.json
+ create mode 100755 services/wit.js
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku create
+Creating app... done, ⬢ friendly-marks-85535
+https://friendly-marks-85535.herokuapp.com/ | https://git.heroku.com/friendly-marks-85535.git
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git push heroku master
+Counting objects: 30, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (30/30), 2.40 MiB | 538.00 KiB/s, done.
+Total 30 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Node.js app detected
+remote: 
+remote: -----> Creating runtime environment
+remote:        
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NPM_CONFIG_PRODUCTION=true
+remote:        NODE_VERBOSE=false
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote: 
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:        
+remote:        Resolving node version 6.x via semver.io...
+remote:        Downloading and installing node 6.11.0...
+remote:        Using default npm version: 3.10.10
+remote: 
+remote: -----> Restoring cache
+remote:        Skipping cache restore (new-signature)
+remote: 
+remote: -----> Building dependencies
+remote:        Installing node modules (package.json)
+remote:        messengerbotwitai@1.0.0 /tmp/build_adb8658b6011784063aad41c8b0f03be
+remote:        ├─┬ body-parser@1.17.2
+remote:        │ ├── bytes@2.4.0
+remote:        │ ├── content-type@1.0.2
+remote:        │ ├─┬ debug@2.6.7
+remote:        │ │ └── ms@2.0.0
+remote:        │ ├── depd@1.1.0
+remote:        │ ├─┬ http-errors@1.6.1
+remote:        │ │ └── inherits@2.0.3
+remote:        │ ├── iconv-lite@0.4.15
+remote:        │ ├─┬ on-finished@2.3.0
+remote:        │ │ └── ee-first@1.1.1
+remote:        │ ├── qs@6.4.0
+remote:        │ ├─┬ raw-body@2.2.0
+remote:        │ │ └── unpipe@1.0.0
+remote:        │ └─┬ type-is@1.6.15
+remote:        │   └── media-typer@0.3.0
+remote:        ├─┬ express@4.15.3
+remote:        │ ├─┬ accepts@1.3.3
+remote:        │ │ └── negotiator@0.6.1
+remote:        │ ├── array-flatten@1.1.1
+remote:        │ ├── content-disposition@0.5.2
+remote:        │ ├── cookie@0.3.1
+remote:        │ ├── cookie-signature@1.0.6
+remote:        │ ├── encodeurl@1.0.1
+remote:        │ ├── escape-html@1.0.3
+remote:        │ ├── etag@1.8.0
+remote:        │ ├── finalhandler@1.0.3
+remote:        │ ├── fresh@0.5.0
+remote:        │ ├── merge-descriptors@1.0.1
+remote:        │ ├── methods@1.1.2
+remote:        │ ├── parseurl@1.3.1
+remote:        │ ├── path-to-regexp@0.1.7
+remote:        │ ├─┬ proxy-addr@1.1.4
+remote:        │ │ ├── forwarded@0.1.0
+remote:        │ │ └── ipaddr.js@1.3.0
+remote:        │ ├── range-parser@1.2.0
+remote:        │ ├─┬ send@0.15.3
+remote:        │ │ ├── destroy@1.0.4
+remote:        │ │ └── mime@1.3.4
+remote:        │ ├── serve-static@1.12.3
+remote:        │ ├── setprototypeof@1.0.3
+remote:        │ ├── statuses@1.3.1
+remote:        │ ├── utils-merge@1.0.0
+remote:        │ └── vary@1.1.1
+remote:        ├─┬ node-wit@3.3.2
+remote:        │ ├─┬ node-fetch@1.7.1
+remote:        │ │ ├── encoding@0.1.12
+remote:        │ │ └── is-stream@1.1.0
+remote:        │ └── node-uuid@1.4.8
+remote:        └─┬ request@2.81.0
+remote:        ├── aws-sign2@0.6.0
+remote:        ├── aws4@1.6.0
+remote:        ├── caseless@0.12.0
+remote:        ├─┬ combined-stream@1.0.5
+remote:        │ └── delayed-stream@1.0.0
+remote:        ├── extend@3.0.1
+remote:        ├── forever-agent@0.6.1
+remote:        ├─┬ form-data@2.1.4
+remote:        │ └── asynckit@0.4.0
+remote:        ├─┬ har-validator@4.2.1
+remote:        │ ├─┬ ajv@4.11.8
+remote:        │ │ ├── co@4.6.0
+remote:        │ │ └─┬ json-stable-stringify@1.0.1
+remote:        │ │   └── jsonify@0.0.0
+remote:        │ └── har-schema@1.0.5
+remote:        ├─┬ hawk@3.1.3
+remote:        │ ├── boom@2.10.1
+remote:        │ ├── cryptiles@2.0.5
+remote:        │ ├── hoek@2.16.3
+remote:        │ └── sntp@1.0.9
+remote:        ├─┬ http-signature@1.1.1
+remote:        │ ├── assert-plus@0.2.0
+remote:        │ ├─┬ jsprim@1.4.0
+remote:        │ │ ├── assert-plus@1.0.0
+remote:        │ │ ├── extsprintf@1.0.2
+remote:        │ │ ├── json-schema@0.2.3
+remote:        │ │ └── verror@1.3.6
+remote:        │ └─┬ sshpk@1.13.1
+remote:        │   ├── asn1@0.2.3
+remote:        │   ├── assert-plus@1.0.0
+remote:        │   ├── bcrypt-pbkdf@1.0.1
+remote:        │   ├─┬ dashdash@1.14.1
+remote:        │   │ └── assert-plus@1.0.0
+remote:        │   ├── ecc-jsbn@0.1.1
+remote:        │   ├─┬ getpass@0.1.7
+remote:        │   │ └── assert-plus@1.0.0
+remote:        │   ├── jsbn@0.1.1
+remote:        │   └── tweetnacl@0.14.5
+remote:        ├── is-typedarray@1.0.0
+remote:        ├── isstream@0.1.2
+remote:        ├── json-stringify-safe@5.0.1
+remote:        ├─┬ mime-types@2.1.15
+remote:        │ └── mime-db@1.27.0
+remote:        ├── oauth-sign@0.8.2
+remote:        ├── performance-now@0.2.0
+remote:        ├── safe-buffer@5.1.1
+remote:        ├── stringstream@0.0.5
+remote:        ├─┬ tough-cookie@2.3.2
+remote:        │ └── punycode@1.4.1
+remote:        ├── tunnel-agent@0.6.0
+remote:        └── uuid@3.1.0
+remote:        
+remote: 
+remote: -----> Caching build
+remote:        Clearing previous node cache
+remote:        Saving 2 cacheDirectories (default):
+remote:        - node_modules
+remote:        - bower_components (nothing to cache)
+remote: 
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 17.6M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://friendly-marks-85535.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/friendly-marks-85535.git
+ * [new branch]      master -> master
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ npm install
+npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+messengerbotwitai@1.0.0 /Users/cosy/Desktop/messenger-bot-witai-tutorial-master
+├─┬ body-parser@1.17.2 
+│ ├── bytes@2.4.0 
+│ ├── content-type@1.0.2 
+│ ├─┬ debug@2.6.7 
+│ │ └── ms@2.0.0 
+│ ├── depd@1.1.0 
+│ ├─┬ http-errors@1.6.1 
+│ │ └── inherits@2.0.3 
+│ ├── iconv-lite@0.4.15 
+│ ├─┬ on-finished@2.3.0 
+│ │ └── ee-first@1.1.1 
+│ ├── qs@6.4.0 
+│ ├─┬ raw-body@2.2.0 
+│ │ └── unpipe@1.0.0 
+│ └─┬ type-is@1.6.15 
+│   └── media-typer@0.3.0 
+├─┬ express@4.15.3 
+│ ├─┬ accepts@1.3.3 
+│ │ └── negotiator@0.6.1 
+│ ├── array-flatten@1.1.1 
+│ ├── content-disposition@0.5.2 
+│ ├── cookie@0.3.1 
+│ ├── cookie-signature@1.0.6 
+│ ├── encodeurl@1.0.1 
+│ ├── escape-html@1.0.3 
+│ ├── etag@1.8.0 
+│ ├── finalhandler@1.0.3 
+│ ├── fresh@0.5.0 
+│ ├── merge-descriptors@1.0.1 
+│ ├── methods@1.1.2 
+│ ├── parseurl@1.3.1 
+│ ├── path-to-regexp@0.1.7 
+│ ├─┬ proxy-addr@1.1.4 
+│ │ ├── forwarded@0.1.0 
+│ │ └── ipaddr.js@1.3.0 
+│ ├── range-parser@1.2.0 
+│ ├─┬ send@0.15.3 
+│ │ ├── destroy@1.0.4 
+│ │ └── mime@1.3.4 
+│ ├── serve-static@1.12.3 
+│ ├── setprototypeof@1.0.3 
+│ ├── statuses@1.3.1 
+│ ├── utils-merge@1.0.0 
+│ └── vary@1.1.1 
+├─┬ node-wit@3.3.2 
+│ ├─┬ node-fetch@1.7.1 
+│ │ ├── encoding@0.1.12 
+│ │ └── is-stream@1.1.0 
+│ └── node-uuid@1.4.8 
+└─┬ request@2.81.0 
+  ├── aws-sign2@0.6.0 
+  ├── aws4@1.6.0 
+  ├── caseless@0.12.0 
+  ├─┬ combined-stream@1.0.5 
+  │ └── delayed-stream@1.0.0 
+  ├── extend@3.0.1 
+  ├── forever-agent@0.6.1 
+  ├─┬ form-data@2.1.4 
+  │ └── asynckit@0.4.0 
+  ├─┬ har-validator@4.2.1 
+  │ ├─┬ ajv@4.11.8 
+  │ │ ├── co@4.6.0 
+  │ │ └─┬ json-stable-stringify@1.0.1 
+  │ │   └── jsonify@0.0.0 
+  │ └── har-schema@1.0.5 
+  ├─┬ hawk@3.1.3 
+  │ ├── boom@2.10.1 
+  │ ├── cryptiles@2.0.5 
+  │ ├── hoek@2.16.3 
+  │ └── sntp@1.0.9 
+  ├─┬ http-signature@1.1.1 
+  │ ├── assert-plus@0.2.0 
+  │ ├─┬ jsprim@1.4.0 
+  │ │ ├── assert-plus@1.0.0 
+  │ │ ├── extsprintf@1.0.2 
+  │ │ ├── json-schema@0.2.3 
+  │ │ └── verror@1.3.6 
+  │ └─┬ sshpk@1.13.1 
+  │   ├── asn1@0.2.3 
+  │   ├── assert-plus@1.0.0 
+  │   ├── bcrypt-pbkdf@1.0.1 
+  │   ├─┬ dashdash@1.14.1 
+  │   │ └── assert-plus@1.0.0 
+  │   ├── ecc-jsbn@0.1.1 
+  │   ├─┬ getpass@0.1.7 
+  │   │ └── assert-plus@1.0.0 
+  │   ├── jsbn@0.1.1 
+  │   └── tweetnacl@0.14.5 
+  ├── is-typedarray@1.0.0 
+  ├── isstream@0.1.2 
+  ├── json-stringify-safe@5.0.1 
+  ├─┬ mime-types@2.1.15 
+  │ └── mime-db@1.27.0 
+  ├── oauth-sign@0.8.2 
+  ├── performance-now@0.2.0 
+  ├── safe-buffer@5.1.1 
+  ├── stringstream@0.0.5 
+  ├─┬ tough-cookie@2.3.2 
+  │ └── punycode@1.4.1 
+  ├── tunnel-agent@0.6.0 
+  └── uuid@3.1.0 
+
+npm WARN messengerbotwitai@1.0.0 No repository field.
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git push heroku master
+Everything up-to-date
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ git commit --message "hellow world"
+On branch master
+nothing to commit, working tree clean
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku logs
+2017-07-01T10:20:47.663721+00:00 app[api]: Initial release by user cosy.ily@gmail.com
+2017-07-01T10:20:47.663721+00:00 app[api]: Release v1 created by user cosy.ily@gmail.com
+2017-07-01T10:20:47.855736+00:00 app[api]: Release v2 created by user cosy.ily@gmail.com
+2017-07-01T10:20:47.855736+00:00 app[api]: Enable Logplex by user cosy.ily@gmail.com
+2017-07-01T10:21:01.000000+00:00 app[api]: Build started by user cosy.ily@gmail.com
+2017-07-01T10:21:13.957544+00:00 app[api]: Release v3 created by user cosy.ily@gmail.com
+2017-07-01T10:21:13.957544+00:00 app[api]: Deploy 0880d7b7 by user cosy.ily@gmail.com
+2017-07-01T10:21:13.974130+00:00 app[api]: Scaled to web@1:Free by user cosy.ily@gmail.com
+2017-07-01T10:21:01.000000+00:00 app[api]: Build succeeded
+2017-07-01T10:21:15.713063+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:21:18.041932+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:21:18.041947+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:21:18.041948+00:00 app[web.1]:   ^
+2017-07-01T10:21:18.041948+00:00 app[web.1]: 
+2017-07-01T10:21:18.041949+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:21:18.041950+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:21:18.041950+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:18.041951+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:18.041955+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:18.149156+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:18.150852+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:21:18.135052+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:20.166782+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:21:22.915083+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:22.855254+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   ^
+2017-07-01T10:21:22.855272+00:00 app[web.1]: 
+2017-07-01T10:21:22.855286+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:21:22.855287+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:21:22.855288+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.928761+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:40.173956+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=aa2548e4-3bd4-466d-9001-c9754c79fcee fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:21:41.529656+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=friendly-marks-85535.herokuapp.com request_id=e9427aac-3c3a-4465-8093-ce58c7db6a46 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:29:17.320479+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=f492e952-4eba-4b52-b32e-573169f66cca fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:30:24.500195+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=a9b6bed8-0a81-45f0-8a8c-fe104d1c3615 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:32:11.094734+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=d4a3cece-20ff-41cc-80f8-ed85d133581f fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku config:set FB_PAGE_TOKEN=EAADWVx1iqHEBAJkt8S9kZBRpLzP6nxGqTrd5ZBRBFEMbhcU1z8PNS5zTYz8cTmemvbCSCMZBg1O97S5ZC5Dtccprd0Tmf8gtTRHWjfqVwyyKdzPs7f85r9FpPoFzJ4LVPM2JrZA8wWc8uOdPkoNjctrWTkRikozZBsD761rgHJiwZDZD
+Setting FB_PAGE_TOKEN and restarting ⬢ friendly-marks-85535... done, v4
+FB_PAGE_TOKEN: EAADWVx1iqHEBAJkt8S9kZBRpLzP6nxGqTrd5ZBRBFEMbhcU1z8PNS5zTYz8cTmemvbCSCMZBg1O97S5ZC5Dtccprd0Tmf8gtTRHWjfqVwyyKdzPs7f85r9FpPoFzJ4LVPM2JrZA8wWc8uOdPkoNjctrWTkRikozZBsD761rgHJiwZDZD
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku config:set WIT_TOKEN=O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ
+Setting WIT_TOKEN and restarting ⬢ friendly-marks-85535... done, v5
+WIT_TOKEN: O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku logs
+2017-07-01T10:21:18.041951+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:18.041955+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:18.149156+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:18.150852+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:21:18.135052+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:20.166782+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:21:22.915083+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:22.855254+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   ^
+2017-07-01T10:21:22.855272+00:00 app[web.1]: 
+2017-07-01T10:21:22.855286+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:21:22.855287+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:21:22.855288+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.928761+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:40.173956+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=aa2548e4-3bd4-466d-9001-c9754c79fcee fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:21:41.529656+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=friendly-marks-85535.herokuapp.com request_id=e9427aac-3c3a-4465-8093-ce58c7db6a46 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:29:17.320479+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=f492e952-4eba-4b52-b32e-573169f66cca fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:30:24.500195+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=a9b6bed8-0a81-45f0-8a8c-fe104d1c3615 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:32:11.094734+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=d4a3cece-20ff-41cc-80f8-ed85d133581f fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:11.396424+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhook?hub.mode=subscribe&hub.challenge=1029905189&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=0388e45c-1d51-4e97-8176-ed43618b8a51 fwd="69.171.225.36" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:25.768158+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=1724799320&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=d56739aa-0eac-4585-8bfa-05041e967a44 fwd="69.171.225.52" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:39.428050+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=587063659&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=030bb092-8a43-4d8e-b7cd-81656dcbee86 fwd="69.171.225.40" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:40.838246+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=225353173&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=8a6d5614-7a75-42ac-b1ee-36ccf38ddac3 fwd="69.171.225.40" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:42.147862+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=2141850924&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=ae787974-b06c-4eaa-b401-77599f24f60f fwd="69.171.225.39" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:41:37.318635+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:41:39.585345+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:41:42.567584+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:41:42.471681+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:41:42.471703+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:41:42.471704+00:00 app[web.1]:   ^
+2017-07-01T10:41:42.471704+00:00 app[web.1]: 
+2017-07-01T10:41:42.471705+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:41:42.471706+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:41:42.471706+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:41:42.471707+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:41:42.471708+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:41:42.471708+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:41:42.471709+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:41:42.471709+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:41:42.471710+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:41:42.471711+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:41:42.471711+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:41:42.578650+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:41:44.225928+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=1243525498&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=9867aa5a-9905-4160-90e6-49531b14af29 fwd="69.171.225.17" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:42:30.587906+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:42:30.345038+00:00 app[api]: Set FB_PAGE_TOKEN config vars by user cosy.ily@gmail.com
+2017-07-01T10:42:30.345038+00:00 app[api]: Release v4 created by user cosy.ily@gmail.com
+2017-07-01T10:42:32.165718+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:42:34.145291+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:42:34.145306+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:42:34.145307+00:00 app[web.1]:   ^
+2017-07-01T10:42:34.145310+00:00 app[web.1]: 
+2017-07-01T10:42:34.145311+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:42:34.145312+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:42:34.145313+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:42:34.145314+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:42:34.145314+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:42:34.145315+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:42:34.145315+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:42:34.145316+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:42:34.145316+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:42:34.145317+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:42:34.145318+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:42:34.207472+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:42:34.222490+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:45:05.992644+00:00 app[api]: Set WIT_TOKEN config vars by user cosy.ily@gmail.com
+2017-07-01T10:45:05.992644+00:00 app[api]: Release v5 created by user cosy.ily@gmail.com
+2017-07-01T10:45:06.232818+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:45:07.549328+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:45:09.468443+00:00 app[web.1]: GRABBING WIT
+2017-07-01T10:45:09.490213+00:00 app[web.1]: Running on port 47380
+2017-07-01T10:45:09.886612+00:00 heroku[web.1]: State changed from starting to up
+2017-07-01T10:49:35.303745+00:00 heroku[router]: at=info method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=c95014b3-0c8c-44a8-957a-60d784b50d48 fwd="192.228.142.108" dyno=web.1 connect=0ms service=13ms status=200 bytes=227 protocol=https
+2017-07-01T10:50:00.040762+00:00 heroku[router]: at=info method=GET path="/webhook?hub.mode=subscribe&hub.challenge=343403089&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=1e259a18-1b00-4c7d-9cfb-010afa1569e4 fwd="69.171.225.47" dyno=web.1 connect=0ms service=20ms status=404 bytes=390 protocol=https
+2017-07-01T10:50:07.383716+00:00 heroku[router]: at=info method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=2048315234&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=a17db99c-d82e-4290-9016-9f84d4d914fe fwd="69.171.225.18" dyno=web.1 connect=0ms service=4ms status=200 bytes=209 protocol=https
+2017-07-01T10:50:07.385488+00:00 app[web.1]: Error: Can't set headers after they are sent.
+2017-07-01T10:50:07.385505+00:00 app[web.1]:     at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:357:11)
+2017-07-01T10:50:07.385506+00:00 app[web.1]:     at ServerResponse.send (/app/node_modules/express/lib/response.js:170:12)
+2017-07-01T10:50:07.385506+00:00 app[web.1]:     at ServerResponse.header (/app/node_modules/express/lib/response.js:730:10)
+2017-07-01T10:50:07.385508+00:00 app[web.1]:     at /app/index.js:33:7
+2017-07-01T10:50:07.385509+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-07-01T10:50:07.385509+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/route.js:137:13)
+2017-07-01T10:50:07.385510+00:00 app[web.1]:     at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2017-07-01T10:50:07.385510+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-07-01T10:50:07.385511+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:281:22
+2017-07-01T10:50:07.385512+00:00 app[web.1]:     at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ curl \
+>   -H 'Authorization: Bearer $TOKEN' \
+>  'https://api.wit.ai/message?v=20170307&q=hello
+> 
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku logs
+2017-07-01T10:21:18.041951+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:18.041952+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:18.041953+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:18.041954+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:18.041955+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:18.149156+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:18.150852+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:21:18.135052+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:20.166782+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:21:22.915083+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:21:22.855254+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:21:22.855271+00:00 app[web.1]:   ^
+2017-07-01T10:21:22.855272+00:00 app[web.1]: 
+2017-07-01T10:21:22.855286+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:21:22.855287+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:21:22.855288+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:21:22.855289+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:21:22.855290+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:21:22.855291+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:21:22.855292+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:21:22.928761+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:21:40.173956+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=aa2548e4-3bd4-466d-9001-c9754c79fcee fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:21:41.529656+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=friendly-marks-85535.herokuapp.com request_id=e9427aac-3c3a-4465-8093-ce58c7db6a46 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:29:17.320479+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=f492e952-4eba-4b52-b32e-573169f66cca fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:30:24.500195+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=a9b6bed8-0a81-45f0-8a8c-fe104d1c3615 fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:32:11.094734+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=d4a3cece-20ff-41cc-80f8-ed85d133581f fwd="192.228.142.108" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:11.396424+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhook?hub.mode=subscribe&hub.challenge=1029905189&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=0388e45c-1d51-4e97-8176-ed43618b8a51 fwd="69.171.225.36" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:25.768158+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=1724799320&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=d56739aa-0eac-4585-8bfa-05041e967a44 fwd="69.171.225.52" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:39.428050+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=587063659&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=030bb092-8a43-4d8e-b7cd-81656dcbee86 fwd="69.171.225.40" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:40.838246+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=225353173&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=8a6d5614-7a75-42ac-b1ee-36ccf38ddac3 fwd="69.171.225.40" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:40:42.147862+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=2141850924&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=ae787974-b06c-4eaa-b401-77599f24f60f fwd="69.171.225.39" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:41:37.318635+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:41:39.585345+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:41:42.567584+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:41:42.471681+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:41:42.471703+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:41:42.471704+00:00 app[web.1]:   ^
+2017-07-01T10:41:42.471704+00:00 app[web.1]: 
+2017-07-01T10:41:42.471705+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:41:42.471706+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:41:42.471706+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:41:42.471707+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:41:42.471708+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:41:42.471708+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:41:42.471709+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:41:42.471709+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:41:42.471710+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:41:42.471711+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:41:42.471711+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:41:42.578650+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:41:44.225928+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=1243525498&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=9867aa5a-9905-4160-90e6-49531b14af29 fwd="69.171.225.17" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-01T10:42:30.587906+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:42:30.345038+00:00 app[api]: Set FB_PAGE_TOKEN config vars by user cosy.ily@gmail.com
+2017-07-01T10:42:30.345038+00:00 app[api]: Release v4 created by user cosy.ily@gmail.com
+2017-07-01T10:42:32.165718+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:42:34.145291+00:00 app[web.1]: /app/config.js:5
+2017-07-01T10:42:34.145306+00:00 app[web.1]:   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
+2017-07-01T10:42:34.145307+00:00 app[web.1]:   ^
+2017-07-01T10:42:34.145310+00:00 app[web.1]: 
+2017-07-01T10:42:34.145311+00:00 app[web.1]: Error: Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.
+2017-07-01T10:42:34.145312+00:00 app[web.1]:     at Object.<anonymous> (/app/config.js:5:9)
+2017-07-01T10:42:34.145313+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:42:34.145314+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:579:10)
+2017-07-01T10:42:34.145314+00:00 app[web.1]:     at Module.load (module.js:487:32)
+2017-07-01T10:42:34.145315+00:00 app[web.1]:     at tryModuleLoad (module.js:446:12)
+2017-07-01T10:42:34.145315+00:00 app[web.1]:     at Function.Module._load (module.js:438:3)
+2017-07-01T10:42:34.145316+00:00 app[web.1]:     at Module.require (module.js:497:17)
+2017-07-01T10:42:34.145316+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2017-07-01T10:42:34.145317+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:7:14)
+2017-07-01T10:42:34.145318+00:00 app[web.1]:     at Module._compile (module.js:570:32)
+2017-07-01T10:42:34.207472+00:00 heroku[web.1]: Process exited with status 1
+2017-07-01T10:42:34.222490+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-01T10:45:05.992644+00:00 app[api]: Set WIT_TOKEN config vars by user cosy.ily@gmail.com
+2017-07-01T10:45:05.992644+00:00 app[api]: Release v5 created by user cosy.ily@gmail.com
+2017-07-01T10:45:06.232818+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-01T10:45:07.549328+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-07-01T10:45:09.468443+00:00 app[web.1]: GRABBING WIT
+2017-07-01T10:45:09.490213+00:00 app[web.1]: Running on port 47380
+2017-07-01T10:45:09.886612+00:00 heroku[web.1]: State changed from starting to up
+2017-07-01T10:49:35.303745+00:00 heroku[router]: at=info method=GET path="/" host=friendly-marks-85535.herokuapp.com request_id=c95014b3-0c8c-44a8-957a-60d784b50d48 fwd="192.228.142.108" dyno=web.1 connect=0ms service=13ms status=200 bytes=227 protocol=https
+2017-07-01T10:50:00.040762+00:00 heroku[router]: at=info method=GET path="/webhook?hub.mode=subscribe&hub.challenge=343403089&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=1e259a18-1b00-4c7d-9cfb-010afa1569e4 fwd="69.171.225.47" dyno=web.1 connect=0ms service=20ms status=404 bytes=390 protocol=https
+2017-07-01T10:50:07.383716+00:00 heroku[router]: at=info method=GET path="/webhooks?hub.mode=subscribe&hub.challenge=2048315234&hub.verify_token=just_do_it" host=friendly-marks-85535.herokuapp.com request_id=a17db99c-d82e-4290-9016-9f84d4d914fe fwd="69.171.225.18" dyno=web.1 connect=0ms service=4ms status=200 bytes=209 protocol=https
+2017-07-01T10:50:07.385488+00:00 app[web.1]: Error: Can't set headers after they are sent.
+2017-07-01T10:50:07.385505+00:00 app[web.1]:     at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:357:11)
+2017-07-01T10:50:07.385506+00:00 app[web.1]:     at ServerResponse.send (/app/node_modules/express/lib/response.js:170:12)
+2017-07-01T10:50:07.385506+00:00 app[web.1]:     at ServerResponse.header (/app/node_modules/express/lib/response.js:730:10)
+2017-07-01T10:50:07.385508+00:00 app[web.1]:     at /app/index.js:33:7
+2017-07-01T10:50:07.385509+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-07-01T10:50:07.385509+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/route.js:137:13)
+2017-07-01T10:50:07.385510+00:00 app[web.1]:     at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2017-07-01T10:50:07.385510+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-07-01T10:50:07.385511+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:281:22
+2017-07-01T10:50:07.385512+00:00 app[web.1]:     at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ curl -H 'Authorization: Bearer <YOUR TOKEN HERE>' 'https://api.wit.ai/message?v=20160526&q=what%20is%20the%20weather%20in%20New%20York'
+{"error":"Bad auth, check token\/params","code":"no-auth"}Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ 
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ 
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ curl -H 'Authorization: Bearer O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ' 'https://api.wit.ai/message?v=20160526&q=when%20is%20dota2%20'
+{"msg_id":"0vI1cK7aZRglNBNRc","_text":"when is dota2","entities":{"wit_game":[{"confidence":0.7424598532192,"value":"dota","type":"value"}]}}Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ hello
+-bash: hello: command not found
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ WIT_TOKEN=O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ WIT_TOKEN=O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ node bot
+GRABBING WIT
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=EAADWVx1iqHEBAJkt8S9kZBRpLzP6nxGqTrd5ZBRBFEMbhcU1z8PNS5zTYz8cTmemvbCSCMZBg1O97S5ZC5Dtccprd0Tmf8gtTRHWjfqVwyyKdzPs7f85r9FpPoFzJ4LVPM2JrZA8wWc8uOdPkoNjctrWTkRikozZBsD761rgHJiwZDZD
+> 
+> hi
+> hello
+> çç
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ 
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ WIT_TOKEN=O6EMJCQZX27KMI7DYNUKHKX5O6KNLEEJ node index
+GRABBING WIT
+Running on port 5000
+hello
+^C
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ 
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$  heroku ps -a friendly-marks-85535
+Free dyno hours quota remaining this month: 550h 0m (100%)
+For more information on dyno sleeping and how to upgrade, see:
+https://devcenter.heroku.com/articles/dyno-sleeping
+
+=== web (Free): node index.js (1)
+web.1: up 2017/07/03 09:20:20 +0800 (~ 6m ago)
+
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ heroku open
+Christines-MacBook-Pro:messenger-bot-witai-tutorial-master cosy$ 
