@@ -6,6 +6,7 @@ var wit = require('./services/wit').getWit()
 import moment from 'moment';
 var curDate = moment();
 
+
 // LETS SAVE USER SESSIONS
 var sessions = {}
 
