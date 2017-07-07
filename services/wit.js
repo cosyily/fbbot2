@@ -5,8 +5,6 @@ var FB = require('../connectors/facebook')
 var Wit = require('node-wit').Wit
 var request = require('request')
 
-import moment from 'moment';
-var curDate = moment();
 
 var firstEntityValue = function (entities, entity) {
 	var val = entities && entities[entity] &&
